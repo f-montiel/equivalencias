@@ -13,12 +13,12 @@
 			<?php
 				include 'connection.php';
 				$pdo = connect();
-				$consulta = $pdo->prepare('SELECT * FROM equivalencias.tipos_um');
+				$consulta = $pdo->prepare('SELECT idtipos_um, nombres FROM equivalencias.tipos_um');
 				$consulta->execute();
-				$idtipos_um = $consulta->fetchAll(PDO::FETCH_COLUMN, 0);
-				$nombres = $consulta->fetchAll(PDO::FETCH_COLUMN, 1);
-				for ($i=0; $i < 10; $i++) { 					
-					echo "<option value =" . $idtipos_um[$i] . ">" . $nombres[$i] . "<option>"; 
+				//$resultado = $consulta->fecthAll();
+								
+				foreach ($consulta as $consulta) {
+					echo "<option value =" . $consulta['idtipos_um'] . ">" . $consulta['nombres'];
 				}
 			?>
 		</select>

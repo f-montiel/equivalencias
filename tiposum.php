@@ -21,9 +21,7 @@ $consulta->execute(array("$tipoUm"));
 		<p>Los datos se han grabado con exito</p>
 	</div>
 	<div>
-		<form>
-			<input type="submit" name="volver" value="Volver">
-		</form>
+		<a href="index.php"><button>Volver</button></a>
 	</div>
 </body>
 </html>
