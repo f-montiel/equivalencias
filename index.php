@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css">
 </head>
 <body>
+<div class="container">
 	<h1>Equivalencias</h1>
 
 	<div class="list-group">
@@ -23,6 +24,7 @@
 		Agregar Tipo de Unidad de Medida
 	</a>
 	</div>
+</div>
 
 </body>
 </html>
