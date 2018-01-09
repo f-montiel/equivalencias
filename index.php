@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Tipos de UM</title>
-		<link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css">
-	</head>
-	<body>
-		<form class="form-inline" action="">
-			<div class="form-group">
-				<label>Unidad de medida de origen</label>
-				<input type="text" name="um_origen">				
-			</div>
-			<div class="form-group">
-				<label>Unidad de medida destino</label>
-				<input type="text" name="um_calculo">
-			</div>
-			<div class="form-group">
-				<input type="submit" name="calcular" value="Calcular">
-			</div>
+<head>
+	<title>Tipos de UM</title>
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css">
+</head>
+<body>
+	<h1>Equivalencias</h1>
 
+	<div class="list-group">
+		<?php
+			include 'tipo_de_unidad_de_medida.php';
+			foreach ($consulta as $consulta) {
+					echo "<a href=" . "calculo_view.php" . "?nombre=" . $consulta['nombres'] . " " . "class='list-group-item'>" . $consulta['nombres'] . "</a>";
+				}
+		?>
+	</div>
+	<div>
+	<a href="unidad_de_medida_view.php">
+		<button>Agregar Unidad de Medida</button>
+	</a>
+	<a href="tipo_de_unidad_de_medida_view.php">
+		<button>Agregar Tipo de Unidad de Medida</button>
+	</a>
+	</div>
 
-
-		</form>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-2">
-					<a href="vista_um.php">
-						<button type="button" class="btn btn-primary">Agregar Unidad de Medida</button>
-					</a>
-				</div>
-				<div class="col-xs-2">
-					<a href="vista_tipos_um.php">
-						<button type="button" class="btn btn-primary">Agregar Tipo de Unidad de Medida</button>
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</body>
+</body>
 </html>
 
 
