@@ -11,11 +11,13 @@
 		<input type="text" name="nombre">
 		<label>Valor</label>
 		<input type="number" name="valor">
-		<select name="tipo_um">
+		<label>Tipo de Unidad de Medida</label>
+		<select name="tipo_um" required="true">
+			<option>--Seleccione tipo de U.M.</option>
 			<?php
 				include 'tipo_de_unidad_de_medida.php';
 				foreach ($consulta as $consulta) {
-					echo "<option value =" . $consulta['idtipos_um'] . ">" . $consulta['nombres'];
+					echo "<option value =" . $consulta['idtipos_um'] . ">" . $consulta['nombre'];
 				}
 			?>
 		</select>

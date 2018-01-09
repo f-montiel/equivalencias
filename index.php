@@ -11,16 +11,16 @@
 		<?php
 			include 'tipo_de_unidad_de_medida.php';
 			foreach ($consulta as $consulta) {
-					echo "<a href=" . "calculo.php" . "?nombre=" . $consulta['nombres'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . " " . "class='list-group-item'>" . $consulta['nombres'] . "</a>";
+					echo "<a href=" . "calculo.php" . "?nombre=" . $consulta['nombre'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . " " . "class='list-group-item'>" . $consulta['nombre'] . "</a>";
 				}
 		?>
 	</div>
 	<div>
-	<a href="unidad_de_medida_view.php">
-		<button>Agregar Unidad de Medida</button>
+	<a href="unidad_de_medida_view.php" class="btn btn-info">
+		Agregar Unidad de Medida
 	</a>
-	<a href="tipo_de_unidad_de_medida_view.php">
-		<button>Agregar Tipo de Unidad de Medida</button>
+	<a href="tipo_de_unidad_de_medida_view.php" class="btn btn-info">
+		Agregar Tipo de Unidad de Medida
 	</a>
 	</div>
 

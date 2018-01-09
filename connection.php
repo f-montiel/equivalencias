@@ -1,7 +1,7 @@
 <?php
 
 function connect(){
-	return new PDO('mysql:localhost; dbname=equivalencias', 'root', 'root');
+	return new PDO('mysql:host=138.68.21.214; dbname=equivalencias', 'montiel', 'montiel');
 }
 
 $pdo = connect();

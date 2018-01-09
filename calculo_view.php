@@ -10,14 +10,20 @@
 
 	<input type="number" name="cantidad">
 
-	<select>
+	<select name="input">
 		<?php 
+			foreach ($unidadesDeMedida as $unidadDeMedida) {
+					echo "<option value=" . $unidadDeMedida['idunidades_de_medida'] . ">" . $unidadDeMedida['nombre'] . "</option>";
+				}
 			
 		?>
 	</select>
 	<p>a:</p>
-	<select>
-		<?php
+	<select name="output">
+		<?php 
+			foreach ($unidadesDeMedida as $unidadDeMedida) {
+					echo "<option value=" . $unidadDeMedida['idunidades_de_medida'] . ">" . $unidadDeMedida['nombre'] . "</option>";
+				}
 			
 		?>
 	</select>
