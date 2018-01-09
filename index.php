@@ -11,7 +11,7 @@
 		<?php
 			include 'tipo_de_unidad_de_medida.php';
 			foreach ($consulta as $consulta) {
-					echo "<a href=" . "calculo_view.php" . "?nombre=" . $consulta['nombres'] . " " . "class='list-group-item'>" . $consulta['nombres'] . "</a>";
+					echo "<a href=" . "calculo.php" . "?nombre=" . $consulta['nombres'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . " " . "class='list-group-item'>" . $consulta['nombres'] . "</a>";
 				}
 		?>
 	</div>

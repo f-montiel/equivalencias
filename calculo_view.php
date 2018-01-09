@@ -6,8 +6,23 @@
 </head>
 <body>
 
-<h1><?php echo $_GET['nombre']; ?></h1>
+	<h1><?php echo $_GET['nombre']; ?></h1>
 
+	<input type="number" name="cantidad">
+
+	<select>
+		<?php 
+			
+		?>
+	</select>
+	<p>a:</p>
+	<select>
+		<?php
+			
+		?>
+	</select>
+
+	<input type="submit" name="calcular" value="Calcular">
 
 
 
