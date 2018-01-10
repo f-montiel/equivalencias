@@ -12,11 +12,11 @@
 		</nav>
 		<div class="container">
 			<form action="tipo_de_unidad_de_medida_guardar.php" method="POST">
-			<label>Unidad de Medida</label>
-			<input type="text" name="tipoUm">
-			<input type="submit" class="btn btn-info" name="Guardar" value="Guardar">
-			<a href="index.php" class="btn btn-info">Pagina Principal</a>
-		</form>
+				<label>Unidad de Medida</label>
+				<input type="text" name="tipoUm">
+				<input type="submit" class="btn btn-info" name="Guardar" value="Guardar">
+				<a href="index.php" class="btn btn-info">Pagina Principal</a>
+			</form>
 		</div>
 	</body>
 </html>

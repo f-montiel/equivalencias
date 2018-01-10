@@ -3,6 +3,7 @@
 <head>
 	<title>Tipos de UM</title>
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../style/style.css">
 </head>
 <body>
 
@@ -16,8 +17,11 @@
 			<?php
 				include 'tipo_de_unidad_de_medida.php';
 				foreach ($consulta as $consulta) {
-						echo "<a href=" . "calculo.php" . "?nombre=" . $consulta['nombre'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . " " . "class='list-group-item'>" . $consulta['nombre'] . "</a>";
-					}
+					echo "<div class='list-group-item'>" . $consulta['nombre'];
+					echo "<div class= 'pull-right'><a href=" . "calculo.php" . "?nombre=" . $consulta['nombre'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . "> Calcular </a>"; 
+					echo "<a href=" . "tipo_de_unidad_de_medida_editar.php" . "?nombre=" . $consulta['nombre'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . "> Editar </a>";
+					echo "<a href=" . "tipo_de_unidad_de_medida_borrar.php" . "?nombre=" . $consulta['nombre'] . "&" . "idtipos_um=" . $consulta['idtipos_um'] . "> Borrar </a></div></div>"; 
+				}
 			?>
 		</div>
 		<div>
