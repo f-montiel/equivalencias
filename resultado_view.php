@@ -13,8 +13,7 @@
 		 foreach ($unidadesDeMedida as  $detalle) {
 			echo " " . $detalle['nombre'];
 		} 	
-	?>
-	
+	?>	
 </h3>
 
 <a href="index.php" class="btn btn-info">Pagina Principal</a>
