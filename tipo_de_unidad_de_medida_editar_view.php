@@ -14,7 +14,7 @@
 	
 	<div class="container">
 		<form action="tipo_de_unidad_de_medida_update.php" method="POST">
-			<label>Unidad de Medida</label>
+			<label> Tipo de Unidad de Medida</label>
 			<input type="text" name="tipoUm" value= <?php foreach ($tipo_um as $nombre) {
 			echo $nombre['nombre'];
 			} ?>>
@@ -22,6 +22,14 @@
 			<input type="submit" class="btn btn-info" name="Guardar" value="Guardar">
 			<a href="index.php" class="btn btn-info">Pagina Principal</a>
 		</form>
+		<h3>Unidades de medidas</h3>
+		<div class="list-group">
+			<?php foreach ($unidades_de_medida as $unidades_de_medida) {
+				echo "<div class='list-group-item'>" . $unidades_de_medida['nombre'];
+				echo "<div class= 'pull-right'><a href=" . "unidad_de_medida_editar.php" . "?nombre=" . $unidades_de_medida['nombre'] . "&idunidades_de_medida=" . $unidades_de_medida['idunidades_de_medida'] . "&valor=" . $unidades_de_medida['valor'] . "> Editar </a>";
+				echo "<a href=" . "unidad_de_medida_borrar.php" . "?idunidades_de_medida=" . $unidades_de_medida['idunidades_de_medida'] . "> Borrar </a></div></div>";
+			} ?>
+		</div >
 	</div>
 
 
