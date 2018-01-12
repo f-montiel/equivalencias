@@ -7,11 +7,15 @@ $tipoUm = $_GET['idtipos_um'];
 try {
 $consulta->execute(array("$tipoUm"));
 } catch(Exception $consulta) {
-  echo 'Este Tipo de Unidad de Medida no se puede borrar';
+  $error='error';
 } 
 
-header('location:index.php');
+if (isset($error)) {
+	$printerror = 'Esta unidad de medida no puede ser borrada';
+}else{
+	$printerror = 'Los datos se han borrado con exito';
+}
 
-// Ver con Edu como agregar vista con mensajes de borrado o del catch
+include 'tipo_de_unidad_de_medida_borrar_vista.php';
 
 ?>
