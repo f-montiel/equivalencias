@@ -20,7 +20,7 @@
 	      <select class="form-control" id="sel1" name="input">
 			<?php 
 				foreach ($unidadesDeMedida as $unidadDeMedida) {
-						echo "<option value=" . $unidadDeMedida['idunidades_de_medida'] . ">" . $unidadDeMedida['nombre'] . "</option>";
+						echo "<option value=" . $unidadDeMedida['valor'] . ">" . $unidadDeMedida['nombre'] . "</option>";
 					}
 				
 			?>
@@ -32,7 +32,7 @@
 	      <select class="form-control" id="sel2" name="output">
 			<?php 
 				foreach ($unidadesDeMedida as $unidadDeMedida) {
-						echo "<option value=" . $unidadDeMedida['idunidades_de_medida'] . ">" . $unidadDeMedida['nombre'] . "</option>";
+						echo "<option value=" . $unidadDeMedida['valor'] . ">" . $unidadDeMedida['nombre'] . "</option>";
 					}
 				
 			?>
