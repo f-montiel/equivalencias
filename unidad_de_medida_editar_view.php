@@ -16,7 +16,7 @@
 			<label>Unidad de Medida</label>
 			<input type="text" name="nombre" value=
 				<?php 
-					foreach ($consulta as  $nombre) {
+					foreach ($unidades_de_medida as  $nombre) {
 						echo $nombre['nombre'];
 					}  
 				?>
@@ -24,27 +24,19 @@
 			<label>Valor</label>
 			<input type="number" name="valor" value=
 				<?php 
-					foreach ($consulta as $valor) {
+					foreach ($unidades_de_medida as $valor) {
 						echo $valor['valor'];
 					}  
 				?>
 			>
-			<label>Tipo de Unidad de Medida</label>
-			<select name="idunidades_de_medida" required="true" value= 
-				<?php
-					foreach ($consulta as  $idtipos_um) {
-						echo $idtipos_um['idtipos_um']; 	
-					} 
-				?>
-			>
-				<option>--Seleccione tipo de U.M.</option>
-				<?php
-					include 'tipo_de_unidad_de_medida.php';
-					foreach ($consulta as $tipo_de_unidad_de_medida) {
-						echo "<option value =" . $tipo_de_unidad_de_medida['idtipos_um'] . ">" . $tipo_de_unidad_de_medida['nombre'] . "</option>";
+			<input type="hidden" name="idunidades_de_medida" value=<?php echo $idunidades_de_medida; ?>>
+			<input type="hidden" name="idtipos_um" value=
+				<?php 
+					foreach ($unidades_de_medida as  $idtipos_um) {
+						echo $idtipos_um['idtipos_um'];
 					}
 				?>
-			</select>
+			>
 			<input type="submit" class="btn btn-info" name="guardar" value="Guardar">
 			<a href="index.php" class="btn btn-info">Pagina Principal</a>
 		</form>

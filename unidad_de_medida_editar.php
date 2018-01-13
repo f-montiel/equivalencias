@@ -8,6 +8,8 @@ $idunidades_de_medida = $_GET['idunidades_de_medida'];
 
 $consulta->execute(array($idunidades_de_medida));
 
+$unidades_de_medida = $consulta->fetchAll();
+
 include 'unidad_de_medida_editar_view.php'
 
 ?>
