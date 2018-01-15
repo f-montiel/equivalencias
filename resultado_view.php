@@ -14,7 +14,7 @@
 	<div class="container">
 	
 	<h3><?php
-			echo $resultado;
+			echo $resultado . " " . $unidadesDeMedida[0]['nombre'];
 		?>
 	</h3>
 

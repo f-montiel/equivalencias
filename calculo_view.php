@@ -37,6 +37,7 @@
 				
 			?>
 		</select>
+		<input type="hidden" name="idunidad_de_medida" value=<?php echo $unidadesDeMedida[0][0]; ?>>
 		</div>
 
 		<input type="submit" class="btn btn-info" name="calcular" value="Calcular">
