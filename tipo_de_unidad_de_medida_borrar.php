@@ -1,4 +1,5 @@
 <?php
+include 'session.php';
 include 'connection.php';
 
 $consulta = $pdo->prepare("DELETE FROM equivalencias.unidades_de_medida WHERE idunidades_de_medida = ?");

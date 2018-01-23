@@ -1,5 +1,5 @@
 <?php
-
+include 'session.php';
 include 'connection.php';
 
 $consulta = $pdo->prepare("UPDATE equivalencias.unidades_de_medida SET unidades_de_medida.nombre = ?, unidades_de_medida.valor = ?, unidades_de_medida.idtipos_um = ? WHERE idunidades_de_medida = ?");

@@ -14,11 +14,11 @@
 	<div class="container">
 	
 	<h3><?php
-			echo $resultado;
+			echo $resultado . ' ' . $tipoUnidadMedida[0][0];
 		?>
 	</h3>
 
-	<a href="index.php" class="btn btn-info">Pagina Principal</a>
+	<a href="tipo_de_unidad_de_medida.php" class="btn btn-info">Pagina Principal</a>
 
 	</div>
 </body>

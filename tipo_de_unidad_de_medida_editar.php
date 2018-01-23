@@ -1,5 +1,5 @@
 <?php
-
+include 'session.php';
 include 'connection.php';
 
 $consulta = $pdo->prepare('SELECT nombre FROM equivalencias.tipos_um WHERE idtipos_um = ?');

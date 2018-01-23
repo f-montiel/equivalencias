@@ -1,5 +1,5 @@
 <?php
-
+include 'session.php';
 include 'connection.php';
 
 $consulta = $pdo->prepare('SELECT nombre, valor, idtipos_um FROM equivalencias.unidades_de_medida WHERE idunidades_de_medida = ?');

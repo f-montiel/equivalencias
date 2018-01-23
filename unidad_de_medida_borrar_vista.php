@@ -11,7 +11,7 @@
 		<?php echo $printerror; ?>
 	</h3>
 
-	<a href="index.php" class="btn btn-info">Pagina Principal</a>
+	<a href="tipo_de_unidad_de_medida.php" class="btn btn-info">Pagina Principal</a>
 	</div>
 
 </body>
