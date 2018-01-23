@@ -31,18 +31,15 @@
 		 <label for="sel2">Output</label>
 	      <select class="form-control" id="sel2" name="output">
 			<?php 
-				foreach ($unidadesDeMedida as $unidadDeMedida) {
-						echo "<option value=" . $unidadDeMedida['valor'] . ">" . $unidadDeMedida['nombre'] . "</option>";
+				foreach ($unidadesDeMedida as $valores) {
+						echo "<option value=" . $valores['valor'] . ">" . $valores['nombre'] . "</option>";
 					}
 				
 			?>
 		</select>
 		</div>
-
 		<input type="submit" class="btn btn-info" name="calcular" value="Calcular">
-
-		<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
-
+		<a href="tipo_de_unidad_de_medida.php" class="btn btn-info">Pagina Principal</a>
 		</form>
 	</div>
 

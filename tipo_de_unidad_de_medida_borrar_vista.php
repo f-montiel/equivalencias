@@ -7,11 +7,12 @@
 </head>
 <body>
 	<div class="container">
-	<h3>
-		<?php echo $printerror; ?>
-	</h3>
+		<h3>
+			<?php echo $printerror; ?>
+		</h3>
 
-	<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
+
+		<a href="tipo_de_unidad_de_medida.php" class="btn btn-info">Pagina Principal</a>
 	</div>
 
 </body>

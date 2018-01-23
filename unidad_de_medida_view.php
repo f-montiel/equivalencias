@@ -28,7 +28,7 @@
 				?>
 			</select>
 			<input type="submit" class="btn btn-info" name="guardar" value="Guardar">
-			<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
+			<a href="tipo_de_unidad_de_medida.php" class="btn btn-info">Pagina Principal</a>
 		</form>
 	</div>
 

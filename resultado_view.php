@@ -13,12 +13,10 @@
 	</nav>
 	<div class="container">
 	
-	<h3><?php
-			echo $resultado . " " . $unidadesDeMedida[0]['nombre'];
-		?>
-	</h3>
+	<h3><?php echo $resultado . ' ' . $tipoUnidadMedida[0][0]; ?></h3>
 
-	<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
+	<a href="tipo_de_unidad_de_medida.php" class="btn btn-info">Pagina Principal</a>
+
 
 	</div>
 </body>

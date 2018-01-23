@@ -1,5 +1,5 @@
 <?php
-
+include 'session.php';
 include 'connection.php';
 
 $pdo = connect();
@@ -12,7 +12,7 @@ $tipo_um = $_POST['tipo_um'];
 
 $consulta->execute(array($nombre, $valor, $tipo_um));
 
-header('location:pagina_principal.php');
+header('location:tipo_de_unidad_de_medida.php');
 
 ?>
 
