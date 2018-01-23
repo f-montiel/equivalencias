@@ -20,7 +20,7 @@
 			} ?>>
 			<input type="hidden" name="idtipos_um" value=<?php echo $idtipos_um;?>>
 			<input type="submit" class="btn btn-info" name="Guardar" value="Guardar">
-			<a href="index.php" class="btn btn-info">Pagina Principal</a>
+			<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
 		</form>
 		<h3>Unidades de medidas</h3>
 		<div class="list-group">

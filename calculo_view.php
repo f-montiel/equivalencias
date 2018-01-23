@@ -37,12 +37,11 @@
 				
 			?>
 		</select>
-		<input type="hidden" name="idunidad_de_medida" value=<?php echo $unidadesDeMedida[0][0]; ?>>
 		</div>
 
 		<input type="submit" class="btn btn-info" name="calcular" value="Calcular">
 
-		<a href="index.php" class="btn btn-info">Pagina Principal</a>
+		<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
 
 		</form>
 	</div>

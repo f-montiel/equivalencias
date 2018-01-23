@@ -8,6 +8,6 @@ $consulta = $pdo->prepare("UPDATE equivalencias.tipos_um SET nombre=(?) WHERE id
 $tipoUm = $_POST['tipoUm'];
 $consulta->execute(array($tipoUm));
 
-header('location:index.php');
+header('location:pagina_principal.php');
 
 ?>

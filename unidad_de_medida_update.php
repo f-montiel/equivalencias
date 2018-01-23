@@ -10,6 +10,6 @@ $idtipos_um = $_POST['idtipos_um'];
 
 $consulta->execute(array($nombre, $valor, $idtipos_um, $idunidades_de_medida));
 
-header('location:index.php');
+header('location:pagina_principal.php');
 
 ?>

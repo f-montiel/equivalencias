@@ -12,7 +12,7 @@ $tipo_um = $_POST['tipo_um'];
 
 $consulta->execute(array($nombre, $valor, $tipo_um));
 
-header('location:index.php');
+header('location:pagina_principal.php');
 
 ?>
 

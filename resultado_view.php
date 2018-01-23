@@ -18,7 +18,7 @@
 		?>
 	</h3>
 
-	<a href="index.php" class="btn btn-info">Pagina Principal</a>
+	<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
 
 	</div>
 </body>

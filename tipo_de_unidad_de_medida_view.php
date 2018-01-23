@@ -15,7 +15,7 @@
 				<label>Unidad de Medida</label>
 				<input type="text" name="tipoUm">
 				<input type="submit" class="btn btn-info" name="Guardar" value="Guardar">
-				<a href="index.php" class="btn btn-info">Pagina Principal</a>
+				<a href="pagina_principal.php" class="btn btn-info">Pagina Principal</a>
 			</form>
 		</div>
 	</body>
