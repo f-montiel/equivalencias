@@ -19,7 +19,6 @@
 		<label>Contraseña</label>
 		<input type="password" name="pass">
 		<input class="btn btn-info" type="submit" name="ingresar" value="Ingresar">
-		<a class="btn btn-info" href="usuario_guardar_view.php">Registrar</a>
 	</form>
 	</div>
 
