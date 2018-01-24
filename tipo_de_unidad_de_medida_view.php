@@ -8,11 +8,10 @@
 		<nav class="navbar navbar-default">
 		  <div class="container">
 		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">Equivalencias</a>
+		      <a class="navbar-brand">Equivalencias</a>
 		    </div>
 		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="tipo_de_unidad_de_medida.php">Home</a></li>
-		      <!--<li><a href="#"><?php echo $usuario_session; ?></a></li>-->
+		      <li><a href="tipo_de_unidad_de_medida.php">Home</a></li>
 		      <li><a href="configuraciones_view.php">Configuracion</a></li>
 		      <li><a href="cerrar_session.php">Cerrar Sesion</a></li>
 		    </ul>

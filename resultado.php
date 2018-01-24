@@ -6,6 +6,4 @@ $cantidad = $_POST['cantidad'];
 $resultado = $cantidad * pow(10, $valorInput-$valorOutput);
 
 include 'resultado_view.php';
-
 ?>
-

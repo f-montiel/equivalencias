@@ -13,15 +13,15 @@
 		</div>
 	</nav>
 	<div class="container">
-	<form action="ingresar.php" method="POST">
-		<label>Usuario</label>
-		<input type="text" name="usuario">
-		<label>Contraseña</label>
-		<input type="password" name="pass">
-		<input class="btn btn-info" type="submit" name="ingresar" value="Ingresar">
-	</form>
+		<div>
+			<form action="ingresar.php" method="POST">
+				<label>Usuario</label>
+				<input type="text" name="usuario">
+				<label>Contraseña</label>
+				<input type="password" name="pass">
+				<input class="btn btn-info" type="submit" name="ingresar" value="Ingresar">
+			</form>
+		</div>
 	</div>
-
-
 </body>
 </html>
